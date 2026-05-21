@@ -15,9 +15,11 @@ body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg
 .page{display:none;}.page.active{display:block;}
 nav{background:var(--navy);position:sticky;top:0;z-index:100;padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:52px;border-bottom:1px solid rgba(255,255,255,0.07);}
 .nav-logo{color:#fff;font-size:14px;font-weight:600;letter-spacing:0.04em;cursor:pointer;}
-.nav-links{display:flex;gap:1.75rem;}
+.nav-links{display:flex;gap:1.75rem;align-items:center;}
 .nav-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;transition:color 0.2s;}
 .nav-links a:hover{color:#fff;}
+.nav-resume{background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,0.2);padding:6px 16px;border-radius:4px;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;}
+.nav-resume:hover{background:rgba(255,255,255,0.18);color:#fff;}
 .hero{background:var(--navy);padding:60px 2rem 52px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.06);}
 .hero-eyebrow{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:rgba(168,208,245,0.7);margin-bottom:16px;}
 .hero h1{font-size:40px;font-weight:700;color:#fff;letter-spacing:-0.02em;margin-bottom:8px;}
@@ -87,18 +89,20 @@ footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;pad
   .hero h1{font-size:28px;}.metric-item{padding:18px 16px;}
   nav{padding:0 1rem;}.nav-links{gap:1rem;}
   .t-grid{grid-template-columns:1fr;}.why-grid{grid-template-columns:1fr;}
+  .nav-resume{display:none;}
 }
 </style>
 </head>
 <body>
 
 <nav>
-  <span class="nav-logo" onclick="showPage('home')">Joaquin Mavares</span>
+  <span class="nav-logo" onclick="showPage('home');window.scrollTo(0,0)">Joaquin Mavares</span>
   <div class="nav-links">
-    <a onclick="showPage('home')">Experience</a>
-    <a onclick="showPage('home')">Skills</a>
+    <a onclick="showPage('home');scrollToId('experience')">Experience</a>
+    <a onclick="showPage('home');scrollToId('skills')">Skills</a>
     <a onclick="showPage('testimonials')">Testimonials</a>
-    <a onclick="showPage('home')">Contact</a>
+    <a onclick="showPage('home');scrollToId('contact')">Contact</a>
+    <a href="Joaquin_Mavares_Resume.pdf" download class="nav-resume">Resume</a>
   </div>
 </nav>
 
@@ -106,12 +110,12 @@ footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;pad
 <div class="page active" id="page-home">
 
 <section class="hero">
-  <p class="hero-eyebrow">Open to SDR, BDR, CSM &amp; Account Management Roles</p>
+  <p class="hero-eyebrow">Open to CSM, Account Manager, SDR &amp; BDR Roles</p>
   <h1>Joaquin Mavares</h1>
-  <p class="hero-sub">Sales Professional <span>|</span> Houston, TX <span>|</span> Bilingual EN / ES</p>
+  <p class="hero-sub">Sales &amp; Client Success Professional <span>|</span> Houston, TX / Austin, TX <span>|</span> Bilingual EN / ES</p>
   <div class="hero-ctas">
     <a href="https://linkedin.com/in/joaquin-mavares/" class="btn-primary" target="_blank">LinkedIn Profile</a>
-    <a class="btn-ghost" onclick="showPage('testimonials')" style="cursor:pointer;">Client Testimonials</a>
+    <a class="btn-ghost" onclick="showPage('testimonials')" style="cursor:pointer;">26 Client Reviews</a>
     <a href="Joaquin_Mavares_Resume.pdf" download class="btn-ghost">Download Resume</a>
   </div>
 </section>
@@ -141,7 +145,7 @@ footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;pad
       <div class="why-card">
         <div class="why-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
         <div class="why-title">AI-Native Workflow</div>
-        <div class="why-desc">Actively uses Claude for account research, personalized outreach, and prospecting automation. Already operating like a modern SDR before day one.</div>
+        <div class="why-desc">Actively uses Claude for account research, personalized outreach, and prospecting automation. Already operating like a modern rep before day one.</div>
       </div>
       <div class="why-card">
         <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
@@ -167,9 +171,10 @@ footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;pad
           <li>Generated $5.3M+ in closed transactions through outbound prospecting, consultative discovery, and disciplined pipeline management across 15&ndash;20 concurrent opportunities</li>
           <li>Executed multi-channel outreach across phone, email, text, and referral networks to identify and qualify senior decision-makers, prioritizing ICP fit and buying intent</li>
           <li>Leveraged AI tools including Claude to research target accounts, generate personalized outreach messaging, build reusable prompt libraries, and automate repetitive prospecting tasks</li>
-          <li>Maintained full CRM pipeline in KV Core with disciplined activity logging, contact segmentation, and performance reporting to track progression and optimize conversion rates</li>
+          <li>Maintained full CRM pipeline in KV Core with disciplined activity logging, contact segmentation, and performance reporting to optimize conversion rates</li>
+          <li>Managed post-close client relationships through referral pipeline development, maintaining ongoing engagement with past clients to drive repeat business and network introductions</li>
           <li>Sourced 61% of production from repeat and referral clients through consistent relationship management and post-close follow-through</li>
-          <li>Earned 26 client reviews averaging 4.8/5.0 through consistent communication, professional follow-through, and executive-level client representation</li>
+          <li>Earned 26 client reviews averaging 4.8/5.0 through consistent communication and professional follow-through</li>
         </ul>
       </div>
       <div class="card card-accent">
@@ -193,11 +198,11 @@ footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;pad
       <div class="card">
         <p class="skill-group-label">Sales &amp; Revenue</p>
         <div class="skills-grid">
-          <span class="skill-tag">Outbound Prospecting</span><span class="skill-tag">Full-Cycle Sales</span><span class="skill-tag">Pipeline Management</span><span class="skill-tag">Consultative Discovery</span><span class="skill-tag">Lead Qualification</span><span class="skill-tag">Negotiation</span><span class="skill-tag">Referral Development</span><span class="skill-tag">Stakeholder Management</span>
+          <span class="skill-tag">Outbound Prospecting</span><span class="skill-tag">Full-Cycle Sales</span><span class="skill-tag">Pipeline Management</span><span class="skill-tag">Consultative Discovery</span><span class="skill-tag">Lead Qualification</span><span class="skill-tag">Negotiation</span><span class="skill-tag">Account Retention</span><span class="skill-tag">Stakeholder Management</span>
         </div>
         <p class="skill-group-label">Tools &amp; Technology</p>
         <div class="skills-grid">
-          <span class="skill-tag">CRM: KV Core</span><span class="skill-tag">Pipeline Reporting</span><span class="skill-tag">AI Workflow Automation (Claude)</span><span class="skill-tag">LinkedIn Sales Navigator</span><span class="skill-tag">Multi-Channel Outreach</span><span class="skill-tag">Prompt Library Development</span>
+          <span class="skill-tag">CRM: KV Core</span><span class="skill-tag">Salesforce</span><span class="skill-tag">HubSpot</span><span class="skill-tag">Pipeline Reporting</span><span class="skill-tag">AI Workflow Automation (Claude)</span><span class="skill-tag">LinkedIn Sales Navigator</span><span class="skill-tag">Multi-Channel Outreach</span><span class="skill-tag">Prompt Library Development</span>
         </div>
         <p class="skill-group-label">Languages &amp; Communication</p>
         <div class="skills-grid">
@@ -210,7 +215,7 @@ footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;pad
   <aside class="sidebar">
     <div class="sidebar-card" id="contact">
       <div class="sidebar-name">Joaquin Mavares</div>
-      <div class="sidebar-tagline">Sales Professional &bull; Houston, Texas</div>
+      <div class="sidebar-tagline">Sales &amp; Client Success Professional &bull; Houston, Texas</div>
       <a class="contact-row" href="https://linkedin.com/in/joaquin-mavares/" target="_blank">
         <div class="c-icon"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
         linkedin.com/in/joaquin-mavares
@@ -229,14 +234,14 @@ footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;pad
       <div class="edu-school" style="margin-bottom:4px;">University of Houston, C.T. Bauer College of Business</div>
       <hr class="divider"/>
       <p class="sidebar-section-title">Target Roles</p>
+      <div class="trole"><span class="dot"></span>Customer Success Manager (CSM)</div>
+      <div class="trole"><span class="dot"></span>Account Manager</div>
       <div class="trole"><span class="dot"></span>Sales Development Rep (SDR)</div>
       <div class="trole"><span class="dot"></span>Business Development Rep (BDR)</div>
       <div class="trole"><span class="dot"></span>Territory Sales Specialist</div>
-      <div class="trole"><span class="dot"></span>Customer Success Manager (CSM)</div>
-      <div class="trole"><span class="dot"></span>Account Manager</div>
       <div class="trole"><span class="dot"></span>SAP Sales Development Executive</div>
       <hr class="divider"/>
-      <p style="font-size:12px;color:var(--muted);line-height:1.5;">Open to relocation. Available immediately.</p>
+      <p style="font-size:12px;color:var(--muted);line-height:1.5;">Open to relocation to Austin, TX.</p>
     </div>
   </aside>
 </div>
@@ -281,10 +286,16 @@ footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;pad
 </div>
 
 <script>
-function showPage(name) {
+function showPage(name){
   document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});
-  var t = document.getElementById('page-' + name);
+  var t=document.getElementById('page-'+name);
   if(t){t.classList.add('active');window.scrollTo(0,0);}
+}
+function scrollToId(id){
+  setTimeout(function(){
+    var el=document.getElementById(id);
+    if(el){el.scrollIntoView({behavior:'smooth',block:'start'});}
+  },60);
 }
 </script>
 </body>
