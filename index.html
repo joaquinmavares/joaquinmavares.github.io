@@ -21,21 +21,21 @@ nav{background:var(--navy);position:sticky;top:0;z-index:100;padding:0 2.5rem;di
 .nav-resume{background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,0.2);padding:6px 16px;border-radius:4px;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;}
 .nav-resume:hover{background:rgba(255,255,255,0.18);color:#fff;}
 .hero{background:var(--navy);padding:60px 2rem 52px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.06);}
-.hero-eyebrow{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:rgba(168,208,245,0.7);margin-bottom:16px;}
-.hero h1{font-size:40px;font-weight:700;color:#fff;letter-spacing:-0.02em;margin-bottom:8px;}
-.hero-sub{font-size:14px;color:rgba(255,255,255,0.42);margin-bottom:30px;letter-spacing:0.03em;}
+.hero-eyebrow{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.18em;color:rgba(168,208,245,0.55);margin-bottom:20px;}
+.hero h1{font-size:48px;font-weight:700;color:#fff;letter-spacing:-0.03em;margin-bottom:14px;}
+.hero-sub{font-size:13px;color:rgba(255,255,255,0.35);margin-bottom:14px;letter-spacing:0.02em;}.hero-bio{font-size:13.5px;color:rgba(255,255,255,0.58);margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.75;font-weight:300;padding-top:16px;border-top:1px solid rgba(255,255,255,0.08);}
 .hero-sub span{color:rgba(255,255,255,0.2);margin:0 8px;}
 .hero-ctas{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
 .btn-primary{background:var(--accent);color:#fff;padding:10px 24px;border-radius:5px;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:inherit;transition:background 0.2s;text-decoration:none;display:inline-block;}
 .btn-primary:hover{background:#1560ac;}
 .btn-ghost{background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.72);border:1px solid rgba(255,255,255,0.16);padding:10px 24px;border-radius:5px;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;transition:background 0.2s;text-decoration:none;display:inline-block;}
 .btn-ghost:hover{background:rgba(255,255,255,0.12);}
-.metrics{background:var(--white);border-bottom:1px solid var(--border);display:flex;justify-content:center;flex-wrap:wrap;}
-.metric-item{padding:22px 24px;text-align:center;border-right:1px solid var(--border);}
+.metrics{background:var(--white);border-bottom:1px solid var(--border);display:flex;justify-content:center;flex-wrap:nowrap;}
+.metric-item{padding:18px 16px;text-align:center;border-right:1px solid var(--border);flex:1;}
 .metric-item:last-child{border-right:none;}
-.metric-num{font-size:24px;font-weight:700;color:var(--navy);display:block;line-height:1;margin-bottom:5px;}
+.metric-num{font-size:20px;font-weight:700;color:var(--navy);display:block;line-height:1;margin-bottom:5px;}
 .metric-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;}
-.why-section{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:52px 2rem;}
+.featured-t-section{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:52px 2rem;}.featured-t-inner{max-width:960px;margin:0 auto;}.featured-t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:8px;}.featured-t-card{background:var(--white);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:20px 22px;}.featured-t-link{display:inline-block;color:var(--accent);font-size:12px;font-weight:600;text-decoration:none;border:1px solid var(--accent);padding:9px 22px;border-radius:5px;transition:all 0.2s;letter-spacing:0.04em;}.featured-t-link:hover{background:var(--accent-light);}.why-section{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:52px 2rem;}
 .why-inner{max-width:960px;margin:0 auto;}
 .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:8px;}
 .why-card{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:22px 20px;}
@@ -83,6 +83,14 @@ h2{font-size:19px;font-weight:700;color:var(--navy);margin-bottom:20px;}
 .t-meta{font-size:11px;color:var(--muted);margin-top:2px;}
 .t-bottom{text-align:center;padding:0 2rem 48px;}
 .t-bottom a{display:inline-block;background:var(--accent);color:#fff;padding:11px 28px;border-radius:5px;text-decoration:none;font-size:13px;font-weight:600;}
+.connect-section{background:var(--navy);padding:64px 2rem;text-align:center;}
+.connect-inner{max-width:600px;margin:0 auto;}
+.connect-sub{font-size:14px;color:rgba(255,255,255,0.45);margin-bottom:32px;line-height:1.7;margin-top:8px;}
+.connect-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.btn-ghost-dark{background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.72);border:1px solid rgba(255,255,255,0.16);padding:10px 24px;border-radius:5px;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;transition:background 0.2s;text-decoration:none;display:inline-block;}
+.btn-ghost-dark:hover{background:rgba(255,255,255,0.12);}
+.connect-section .section-label{color:rgba(168,208,245,0.7);}
+.connect-section h2{color:#fff;margin-bottom:12px;}
 footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;padding:20px;font-size:11.5px;letter-spacing:0.05em;}
 @media(max-width:720px){
   .container{grid-template-columns:1fr;}.sidebar{position:static;}
@@ -110,9 +118,10 @@ footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;pad
 <div class="page active" id="page-home">
 
 <section class="hero">
-  <p class="hero-eyebrow">Open to CSM, Account Manager, SDR &amp; BDR Roles</p>
+  <p class="hero-eyebrow">Open to CSM, Account Manager &amp; SDR / BDR Roles</p>
   <h1>Joaquin Mavares</h1>
   <p class="hero-sub">Sales &amp; Client Success Professional <span>|</span> Houston, TX / Austin, TX <span>|</span> Bilingual EN / ES</p>
+  <p class="hero-bio">Bilingual sales professional transitioning into client-facing tech. I build relationships that compound over time, combining structured pipeline discipline with an AI-native approach to outreach and account management.</p>
   <div class="hero-ctas">
     <a href="https://linkedin.com/in/joaquin-mavares/" class="btn-primary" target="_blank">LinkedIn Profile</a>
     <a class="btn-ghost" onclick="showPage('testimonials')" style="cursor:pointer;">26 Client Reviews</a>
@@ -126,6 +135,30 @@ footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;pad
   <div class="metric-item"><span class="metric-num">4.8 / 5.0</span><span class="metric-label">Client Rating</span></div>
   <div class="metric-item"><span class="metric-num">26</span><span class="metric-label">Verified Reviews</span></div>
 </div>
+
+<section class="featured-t-section">
+  <div class="featured-t-inner">
+    <p class="section-label">Client Testimonials</p>
+    <h2>What Clients Say</h2>
+    <div class="featured-t-grid">
+      <div class="featured-t-card">
+        <p class="t-text">"He is a true professional, and will do whatever is needed to take care of his client. Our purchase was not simple, there were many issues to work through. Joaquin helped us cover all the details, even small ones we probably would have missed."</p>
+        <div class="t-name">Blaine Tasaka</div>
+      </div>
+      <div class="featured-t-card">
+        <p class="t-text">"We had a great experience working with Joaquin. He is knowledgeable, responsive, professional, and very detail-oriented."</p>
+        <div class="t-name">Stephanie Nunez</div>
+      </div>
+      <div class="featured-t-card">
+        <p class="t-text">"He was helpful and flexible during the shopping period. Had a lot of knowledge and was able to help guide us through negotiations and contracts. Very professional, kind and really went above and beyond for us."</p>
+        <div class="t-name">Nikole V</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:24px;">
+      <a class="featured-t-link" onclick="showPage('testimonials')" style="cursor:pointer;">View all 26 reviews &rarr;</a>
+    </div>
+  </div>
+</section>
 
 <section class="why-section">
   <div class="why-inner">
@@ -246,7 +279,19 @@ footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;pad
   </aside>
 </div>
 
-<footer>&copy; 2026 Joaquin Mavares &nbsp;&bull;&nbsp; Houston, Texas &nbsp;&bull;&nbsp; Sales Professional</footer>
+<section class="connect-section">
+  <div class="connect-inner">
+    <p class="section-label">Get In Touch</p>
+    <h2>Let's Connect</h2>
+    <p class="connect-sub">Open to CSM, Account Manager, and SDR / BDR roles in client-facing tech. Based in Houston, open to Austin.</p>
+    <div class="connect-ctas">
+      <a href="mailto:joaquin.e.mavares@gmail.com" class="btn-primary">joaquin.e.mavares@gmail.com</a>
+      <a href="https://linkedin.com/in/joaquin-mavares/" class="btn-ghost-dark" target="_blank">LinkedIn Profile</a>
+      <a href="Joaquin_Mavares_Resume.pdf" download class="btn-ghost-dark">Download Resume</a>
+    </div>
+  </div>
+</section>
+<footer>&copy; 2026 Joaquin Mavares &nbsp;&bull;&nbsp; Houston, TX / Austin, TX &nbsp;&bull;&nbsp; Sales Professional</footer>
 </div>
 
 <!-- TESTIMONIALS -->
@@ -256,30 +301,30 @@ footer{background:var(--navy);color:rgba(255,255,255,0.28);text-align:center;pad
   <p>26 verified Google reviews &nbsp;&bull;&nbsp; 4.8 / 5.0 average rating</p>
 </div>
 <div class="t-grid">
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"We had a great experience working with Joaquin. He is knowledgeable, responsive, professional, and very detail-oriented."</p><div class="t-name">Stephanie Nunez</div><div class="t-meta">11 weeks ago</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin took great care of us. I highly recommend working with him if you need a realtor in the Houston area."</p><div class="t-name">Jacob Velasco</div><div class="t-meta">14 weeks ago &bull; Local Guide</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"He was helpful and flexible during the shopping period. Had a lot of knowledge and was able to help guide us through negotiations and contracts. Very professional, kind and really went above and beyond for us."</p><div class="t-name">Nikole V</div><div class="t-meta">14 weeks ago &bull; Local Guide</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"He is a true professional, and will do whatever is needed to take care of his client. Our purchase was not simple, there were many issues to work through. Joaquin helped us cover all the details, even small ones we probably would have missed."</p><div class="t-name">Blaine Tasaka</div><div class="t-meta">20 weeks ago &bull; Purchased Aug 2025</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Recomiendo el buen servicio de Joaquin como tu Realtor."</p><div class="t-name">Aleider Munoz Gomez</div><div class="t-meta">31 weeks ago</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"After seeing how much effort he put in on the first day of meeting us we knew we wanted to work with him. He got our house sold and us into the house we've always wanted."</p><div class="t-name">Michael Herrera</div><div class="t-meta">45 weeks ago</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Working with Joaquin was a great experience! He was so knowledgeable and patient with us as we navigated our search. Never once did he make us feel rushed, he puts his clients first."</p><div class="t-name">Maya Sarihan</div><div class="t-meta">48 weeks ago</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"As a first-time homebuyer, I was nervous about the process, but he guided me through every step and made everything feel easy and manageable. He was thorough, professional, and always looked out for my best interests."</p><div class="t-name">August Johnson</div><div class="t-meta">48 weeks ago</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin was great at helping us find a rental! Very helpful, works very hard, and we highly recommend him."</p><div class="t-name">Matthew Simpson</div><div class="t-meta">Mar 2025 &bull; Kingwood, TX</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"I am very impressed with Joaquin's ability as a Realtor. I recommend him to everyone with the highest rating."</p><div class="t-name">Maria Q</div><div class="t-meta">Feb 2025 &bull; Katy, TX</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Where can I start? He's on top of his game! He helped us during the process and everything was smooth!"</p><div class="t-name">Keith Tangente</div><div class="t-meta">Dec 2024 &bull; Tomball, TX</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin guided us, spoke to our loan processors and builder to ensure everything was perfect. He even went to check on our home to make sure it was being built correctly. My family and I are blessed."</p><div class="t-name">Diana A</div><div class="t-meta">Dec 2024 &bull; Tomball, TX</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"I could not have asked for a better realtor than Joaquin. He went above and beyond in assisting us with finding and securing our home."</p><div class="t-name">Priscilla Noboa</div><div class="t-meta">Dec 2024 &bull; Cypress, TX</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Buying out of state required us to be physically present but it just wasn't always possible, and Joaquin went above and beyond. Kind, knowledgeable, and never left us with unanswered questions. We now have a real estate agent and a friend."</p><div class="t-name">Idaly Noboa</div><div class="t-meta">Nov 2024 &bull; Hockley, TX</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Professional, knowledgeable, and truly dedicated to helping me find the perfect home. Responsive, attentive to details, and made everything smooth and stress-free."</p><div class="t-name">Raz Velez</div><div class="t-meta">Oct 2024</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin always showed great care and follow through. He is a man of his word who takes pride in his work."</p><div class="t-name">Santiago Perera</div><div class="t-meta">Aug 2024</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"He is by far the best Real Estate Agent I have seen. Went above and beyond. Some of the best communication I have dealt with, even after hours!"</p><div class="t-name">Ronald Laehn</div><div class="t-meta">Jul 2024</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Great service and great work. Found exactly the property I was looking for and made sure everything I needed was taken care of."</p><div class="t-name">Travis Enochs</div><div class="t-meta">May 2024 &bull; River Oaks</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"He helped me find a fully furnished rental in The Woodlands. I couldn't have been happier with his commitment and communication. I'm now planning to buy and he has already helped me start that process too!"</p><div class="t-name">Aleja DesRuisseaux</div><div class="t-meta">Dec 2023 &bull; The Woodlands, TX</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Great experience!! Went above and beyond to book showings around our busy schedule and made closing a dream."</p><div class="t-name">Zachary Anderson</div><div class="t-meta">Oct 2023</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin helped us find a beautiful home that fit all of our priorities. He puts in an empathic effort to understand your particular situation."</p><div class="t-name">Eric Wells</div><div class="t-meta">Oct 2023</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin has been very helpful in finding and negotiating the purchase of my new home. He has been a joy to work with and has valuable resources to help new home buyers."</p><div class="t-name">John Cardwell</div><div class="t-meta">Oct 2023</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin helped me from start to finish. Even after I closed he stayed in contact and gave me advice to develop my property the way I envisioned it."</p><div class="t-name">DG2C WW3</div><div class="t-meta">Aug 2023</div></div>
-  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Amazing Real Estate Agent, this man goes above and beyond. Joaquin found the land I wanted in a great community."</p><div class="t-name">Tonya Lawerence</div><div class="t-meta">Aug 2023</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"We had a great experience working with Joaquin. He is knowledgeable, responsive, professional, and very detail-oriented."</p><div class="t-name">Stephanie Nunez</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin took great care of us. I highly recommend working with him if you need a realtor in the Houston area."</p><div class="t-name">Jacob Velasco</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"He was helpful and flexible during the shopping period. Had a lot of knowledge and was able to help guide us through negotiations and contracts. Very professional, kind and really went above and beyond for us."</p><div class="t-name">Nikole V</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"He is a true professional, and will do whatever is needed to take care of his client. Our purchase was not simple, there were many issues to work through. Joaquin helped us cover all the details, even small ones we probably would have missed."</p><div class="t-name">Blaine Tasaka</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Recomiendo el buen servicio de Joaquin como tu Realtor."</p><div class="t-name">Aleider Munoz Gomez</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"After seeing how much effort he put in on the first day of meeting us we knew we wanted to work with him. He got our house sold and us into the house we've always wanted."</p><div class="t-name">Michael Herrera</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Working with Joaquin was a great experience! He was so knowledgeable and patient with us as we navigated our search. Never once did he make us feel rushed, he puts his clients first."</p><div class="t-name">Maya Sarihan</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"As a first-time homebuyer, I was nervous about the process, but he guided me through every step and made everything feel easy and manageable. He was thorough, professional, and always looked out for my best interests."</p><div class="t-name">August Johnson</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin was great at helping us find a rental! Very helpful, works very hard, and we highly recommend him."</p><div class="t-name">Matthew Simpson</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"I am very impressed with Joaquin's ability as a Realtor. I recommend him to everyone with the highest rating."</p><div class="t-name">Maria Q</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Where can I start? He's on top of his game! He helped us during the process and everything was smooth!"</p><div class="t-name">Keith Tangente</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin guided us, spoke to our loan processors and builder to ensure everything was perfect. He even went to check on our home to make sure it was being built correctly. My family and I are blessed."</p><div class="t-name">Diana A</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"I could not have asked for a better realtor than Joaquin. He went above and beyond in assisting us with finding and securing our home."</p><div class="t-name">Priscilla Noboa</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Buying out of state required us to be physically present but it just wasn't always possible, and Joaquin went above and beyond. Kind, knowledgeable, and never left us with unanswered questions. We now have a real estate agent and a friend."</p><div class="t-name">Idaly Noboa</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Professional, knowledgeable, and truly dedicated to helping me find the perfect home. Responsive, attentive to details, and made everything smooth and stress-free."</p><div class="t-name">Raz Velez</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin always showed great care and follow through. He is a man of his word who takes pride in his work."</p><div class="t-name">Santiago Perera</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"He is by far the best Real Estate Agent I have seen. Went above and beyond. Some of the best communication I have dealt with, even after hours!"</p><div class="t-name">Ronald Laehn</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Great service and great work. Found exactly the property I was looking for and made sure everything I needed was taken care of."</p><div class="t-name">Travis Enochs</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"He helped me find a fully furnished rental in The Woodlands. I couldn't have been happier with his commitment and communication. I'm now planning to buy and he has already helped me start that process too!"</p><div class="t-name">Aleja DesRuisseaux</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Great experience!! Went above and beyond to book showings around our busy schedule and made closing a dream."</p><div class="t-name">Zachary Anderson</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin helped us find a beautiful home that fit all of our priorities. He puts in an empathic effort to understand your particular situation."</p><div class="t-name">Eric Wells</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin has been very helpful in finding and negotiating the purchase of my new home. He has been a joy to work with and has valuable resources to help new home buyers."</p><div class="t-name">John Cardwell</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Joaquin helped me from start to finish. Even after I closed he stayed in contact and gave me advice to develop my property the way I envisioned it."</p><div class="t-name">DG2C WW3</div></div>
+  <div class="t-card"><div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="t-text">"Amazing Real Estate Agent, this man goes above and beyond. Joaquin found the land I wanted in a great community."</p><div class="t-name">Tonya Lawerence</div></div>
 </div>
 <div class="t-bottom"><a href="https://g.co/kgs/u3B9KSc" target="_blank">View all reviews on Google &rarr;</a></div>
 <footer>&copy; 2026 Joaquin Mavares &nbsp;&bull;&nbsp; Houston, Texas &nbsp;&bull;&nbsp; Sales Professional</footer>
